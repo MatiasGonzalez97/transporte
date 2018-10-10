@@ -1,0 +1,406 @@
+/* font-family: 'Open Sans', sans-serif; */
+/* Azul :rgb(46,100,152); */
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+/* cabezera */
+header{
+  padding: 1em 0;
+  width:100%;
+  height: 100px;
+  background-color:rgb(46,100,162);
+}
+header img{
+  width: 100px;
+}
+header h1{
+  color: #fff;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight:100;
+  /* Para poder centrar el texto a la imagen */
+  position: relative;
+  display: inline-block;
+  bottom: 0.8em;
+  /* Para poder separar el texto de la imagen */
+  margin-left: 0.5em;
+}
+
+nav{
+  background-color: #6da9ed;
+  margin-bottom: 2em;
+}
+nav ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+nav ul li{
+  /* Sirve para mostrar a los elementos en una sola linea (a veces se necesita juntar los elementos de los li para que el html/css lo interprete)*/
+  display: inline-block;
+  /* Cada "li" toma un ancho de 20% */
+  width: 20%;
+}
+nav ul li a{
+  color:#fff;
+  text-decoration: none;
+  /* Lo centra dentro del 20% que le dimos antes */
+  text-align: center;
+  padding: 0.2em 0.4em;
+  display: block;
+}
+nav ul li a:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all .3s ease;
+}
+
+nav ul li a.activo{
+  background: #4c76a5;
+}
+footer{
+  background-color: #ccc;
+  clear: both;
+  color: #333;
+  font-size: 0.7em;
+  font-style: italic;
+  text-align: center;
+  /* Separacion alrededor de las letras */
+  padding: 3em 0;
+  margin-top:2em;
+}
+footer p{
+  margin:0;
+  padding: 0;
+  color: red;
+}
+.holder{
+  /* background-color: rgba(255, 0, 0, 0.5); */
+  /* Sirve para poder "hacer flexible" los elementos dentro del holder "NO la imagen" */
+  max-width: 960px;
+  /* Centra el div  */
+  margin: 0 auto;
+}
+/* Inicio home */
+h2{
+  color: #2e64a1;
+  font-weight: 400;
+  margin: 0 0 1em;
+}
+
+.homeimg{
+  margin-bottom: 1.5em;
+  clear: both;
+}
+.homeimg img{
+  max-width: 100%;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+.bienvenidos{
+  /* background-color: rgba(188, 190, 84, 0.5); */
+  width: 75%;
+  padding-right: 2em;
+}
+.testimonios{
+  /* background-color: rgba(0, 26, 255, 0.5); */
+  width: 25%;
+}
+.bienvenidos, .testimonios{
+  box-sizing: border-box;
+}
+.testimonio{
+  background-color: #dddd;
+  padding: 1em;
+}
+.testimonio .cita{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.4em;
+  display: block;
+  margin-bottom: 10px;
+  /* background-color: rgba(255, 0, 0, 0.5); */
+}
+.testimonio .autor{
+  font-style: italic;
+  font-size:0.7em;
+  text-align: center;
+  display: block;
+  /* background-color: rgba(13, 0, 255, 0.5); */
+}
+@media screen (min-width:300px) and (max-width: 600px){
+  .testimonio .cita{
+    width: 100%;
+    font-size: 1em;
+  }
+}
+/* fin home */
+
+
+/* Inicio pagina nosotros */
+
+.historia p{
+  font-size: 0.8em;
+}
+.persona{
+  width: 18%;
+  float: left;
+  margin-left: 2.25%;
+  border: 1px solid #ddd;
+  border-radius:0.25em;
+  box-sizing: border-box;
+}
+.persona figure{
+  text-align: center;
+  margin:0.8em 0 1em;
+  padding: 0;
+}
+.persona figure img{
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(134, 145, 140, 0.77);
+}
+.persona h5, .persona h6{
+  text-align: center;
+  font-weight: normal;
+  color:#2e64e1;
+  margin :0;
+}
+.persona h5{
+  font-size:0.9em;
+}
+.persona h6{
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+.persona p{
+  font-size: 0.7em;
+  margin:0 1em 1em;
+  color: #444;
+}
+.persona:first-child{
+  margin-left: 0;
+}
+/* Imagen agrandada´ */
+
+/* fin pagina nosotros */
+
+/* Inicio pagina servicios */
+.servicio{
+  border: 1px solid #ddd;
+  border-radius: 0.7em;
+  margin:1em 0;
+  padding: 1em;
+  overflow: hidden;
+}
+.servicio figure img{
+  border-radius: 0.8em;
+}
+.servicio .info{
+  width: 75%;
+}
+.servicio .info h4{
+  color:#2e64a1;
+  font-size:1.2em;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0 0 1em;
+  border-bottom: 1px solid #2e64a1;
+  padding-bottom: 0.5em;
+}
+.servicio:nth-child(odd) figure{
+  float: left;
+  margin:0 1em 0 0;
+}
+.servicio:nth-child(odd) .info{
+  float: right;
+}
+.servicio:nth-child(even) figure{
+  float: right;
+  margin: 0 0 0 1em;
+}
+.servicio:nth-child(even) .info{
+  float: left;
+}
+/* Fin pagina servicios */
+/* Inicio galeria */
+.galeria .foto{
+  float: left;
+  width: 18%;
+  margin:1em 0 1em 2.5%;
+  border: 1px solid #ddd;
+  padding: 0.3em;
+  box-sizing: border-box;
+}
+.galeria .foto img{
+  display: block;
+  width: 100%;
+}
+.galeria .foto:nth-child(5n+1){
+  margin-left: 0;
+  /* border-color: red; */
+}
+/* fin pagina galeria */
+/* Inicio pagina Contacto */
+.columna{
+  width: 50%;
+  padding: 0.635em;
+  box-sizing: border-box;
+}
+.columna.left{
+  border-right: 1px solid #ddd;
+}
+.columna.right p{
+    font-size: 0.8em;
+}
+.columna.right ul li{
+  font-size: 0.8em;
+}
+.formulario label{
+    vertical-align: top;
+    width: 16%;
+    display: inline-block;
+}
+.formulario input,
+.formulario textarea{
+  background:#ddd;
+  border-radius: 5px;
+  border:1px solid #999;
+  font-size: 0.8em;
+  padding: 0.4em 0.6em;
+  width: 80%;
+}
+
+.formulario textarea{
+  height: 10em;
+  resize: none;
+}
+.formulario input[type="submit"]{
+  background: #6da9ed;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  color:white;
+  font-size: 1em;
+  padding: 0.4em 2em;
+  text-align: center;
+  width: auto;
+}
+.formulario .acciones{
+  text-align: center;
+}
+/* Fin pagina contacto */
+
+/* inicio media 768 */
+@media screen and (max-width:768px){
+  /*Responsive home */
+  .holder{
+    max-width: 768px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .home .columnas .bienvenidos,
+  .home .columnas .testimonios{
+    width: 50%;
+  }
+  /* Fin responsive home  */
+  /* Inicio responsive pagina nosotros */
+  .nosotros .persona{
+    width: 30%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .nosotros .persona:nth-child(3n+1){
+    margin-left:0;
+  }
+  .servicios .servicio figure,.servicios .servicio .info{
+    box-sizing: border-box;
+  }
+  .servicios .servicio figure{
+    max-width: 22%;
+  }
+  .servicios .servicio figure img{
+    margin-top: 25%;
+    width: 100%;
+    }
+
+  /* Fin pagina responsive pagina nosotros */
+  /* Inicio pagina responsive galeria */
+  .galeria .foto{
+    width: 24%;
+    margin:1em 0 1em 1.33333%;
+    padding: 0.3em;
+  }
+  .galeria .foto:nth-child(5n+1){
+    margin-left: 1.3333%;
+  }
+  .galeria .foto:nth-child(4n+1){
+    margin-left: 0;
+    border-color: green;
+  }
+  /* Fin pagina contacto */
+  .contacto .columna{
+    width: 100%;
+    float: none;
+    padding:0 1em;
+  }
+  .contacto .columna.left{
+    border:none;
+  }
+  .contacto .formulario label{
+    display: block;
+  }
+  .contacto .formulario input[type=text],
+  .contacto .formulario textarea{
+    display: block;
+  }
+  .contacto .formulario p{
+    margin-bottom: 1.3em;
+  }
+  .columna.right{
+    text-align: center;
+  }
+  .columna.right ul{
+    list-style: none;
+  }
+  .columna.left .formulario{
+    text-align: center;
+  }
+}
+/* INICIO MEDIA 480 */
+@media screen and (max-width:480px) {
+  header .logo{
+    margin-left: 1em;
+  }
+  header .logo h1{
+    font-size: 2em;
+  }
+  .home .columnas .bienvenidos,
+  .home .columnas .testimonios{
+    clear: both;
+    width: auto;
+    float: none;
+    display: block;
+  }
+  .home .columnas .bienvenidos{
+    padding: 0.6em;
+  }
+
+}
+/* FIN MEDIA 480 */
+/* INICIO MEDIA 360 */
+@media screen and (max-width:360px) {
+  header .logo{
+    text-align: center;
+    margin-left: 0;
+  }
+  header .logo h1{
+    /* display: block; */
+    position: static;
+  }
+}
+/* FIN MEDIA 360 */
