@@ -5,7 +5,7 @@
 			<h2>Contacto rápido</h2><a name="contacto"></a> 
 			<form action="procesador_formulario.php" method="post" class="formulario">
 				<p>
-					<label for="">Nombre</label>
+					<label for="asd">Nombre</label>
 					<input type="text" name="nombre" />
 				</p>
 				<p>
